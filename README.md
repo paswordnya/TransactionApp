@@ -2,12 +2,12 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started TransactionApp
 Result 
-![Simulator Screenshot - iPhone 16 - 2025-03-22 at 15 30 00](https://github.com/user-attachments/assets/786ea06c-9544-48a5-b314-85da06969674)
-![Simulator Screenshot - iPhone 16 - 2025-03-22 at 15 30 04](https://github.com/user-attachments/assets/7ebf53cf-7f62-4a4f-b913-877a9281bdbe)
-![Simulator Screenshot - iPhone 16 - 2025-03-22 at 15 30 06](https://github.com/user-attachments/assets/bb6c612a-80a7-415d-a2c3-f22f1a731bf4)
-![Simulator Screenshot - iPhone 16 - 2025-03-22 at 15 30 11](https://github.com/user-attachments/assets/13a61b85-c6e6-483b-897f-91f2ec067763)
-![Simulator Screenshot - iPhone 16 - 2025-03-22 at 15 30 15](https://github.com/user-attachments/assets/187f6ccb-3181-47d8-afb1-eb92c8c19838)
 
+<img src="https://github.com/user-attachments/assets/786ea06c-9544-48a5-b314-85da06969674" alt="Deskripsi Gambar" width="250" />
+<img src="https://github.com/user-attachments/assets/7ebf53cf-7f62-4a4f-b913-877a9281bdbe" alt="Deskripsi Gambar" width="250" />
+<img src="https://github.com/user-attachments/assets/bb6c612a-80a7-415d-a2c3-f22f1a731bf4" alt="Deskripsi Gambar" width="250" />
+<img src="https://github.com/user-attachments/assets/13a61b85-c6e6-483b-897f-91f2ec067763" alt="Deskripsi Gambar" width="250" />
+<img src="https://github.com/user-attachments/assets/187f6ccb-3181-47d8-afb1-eb92c8c19838" alt="Deskripsi Gambar" width="250" />
 
 
 
