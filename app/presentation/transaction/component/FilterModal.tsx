@@ -12,7 +12,7 @@ type FilterModalProps = {
 };
 
 const FilterModal = ({ visible, onClose, onSelectFilter }: FilterModalProps) => {
-    const [selectedFilter, setSelectedFilter] = useState<string>('name_asc');
+    const [selectedFilter, setSelectedFilter] = useState<string>('');
     const handleSelect = (value: string) => {
       setSelectedFilter(value);
       onSelectFilter(value);

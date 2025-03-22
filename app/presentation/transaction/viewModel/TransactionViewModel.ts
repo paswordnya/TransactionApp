@@ -42,7 +42,6 @@ export const transactionsViewModel = () => {
     if (query.length >= 2 && filtered.length === 0) {
       console.log("No transactions found matching:", query);
     }
-  
     switch (filter) {
       case "name_asc":
         filtered.sort((a, b) => a.beneficiary_name.localeCompare(b.beneficiary_name));
