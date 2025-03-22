@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#0278fc',
+      backgroundColor: 'white',
     },
     logo: {
       width: 200,
@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
       borderRadius: 100,
     },
     text: {
+      color:"#000",
       fontSize: 24,
       fontWeight: 'bold',
       marginTop: 20,

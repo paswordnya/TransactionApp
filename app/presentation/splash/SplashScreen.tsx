@@ -19,11 +19,11 @@ const SplashScreen = ({ navigation }: Props) => {
 
   return (
     <View style={styles.container}>
-      {/* <Image
-        source={require('../../../assets/splashLogo.png')} 
-        style={styles.logo}
-      /> */}
-      <Text style={styles.text}>Welcome to the App Flip Transaction</Text>
+   
+       <Image source={{ uri: "https://play-lh.googleusercontent.com/rsVpOOx0805dxUELeplBw0UVlEwz8JRZ-X0lutWPwIaNfNGlJwQ75MBkQ2CdnzSTtOo".replace('http://', 'https://')}} style={styles.logo} resizeMode="contain" 
+                    onError={() => console.log('Failed to load image')}
+            />
+      <Text style={styles.text}>Flip Transaction</Text>
     </View>
   );
 };

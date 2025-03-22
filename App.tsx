@@ -16,6 +16,7 @@ import { TransactionItemModel } from './app/model/TransactionItemModel';
 
 export type RootStackParamList = {
   Splash: {  }; 
+  Home: {  }; 
   TransactionDetail: {transactionItemModel: TransactionItemModel}; 
 };
 const Stack = createStackNavigator();

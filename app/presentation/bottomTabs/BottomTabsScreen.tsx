@@ -1,7 +1,5 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
-import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import TransactionScreen from '../transaction/TransactionScreen';
 import ProfileScreen from '../profileScreen/ProfileScreen';
