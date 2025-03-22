@@ -5,18 +5,17 @@ import { RootStackParamList } from '../../../App';
 import Icon from 'react-native-vector-icons/Ionicons';
 import TransactionItemList from '../transactionList/TransactionItemList';
 import { TransactionItemModel } from '../../model/TransactionItemModel';
-import { homeViewModel } from './viewModel/HomeViewModel';
+import { transactionsViewModel } from './viewModel/TransactionViewModel';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import FilterModal from './component/FilterModal';
+import { styles } from './TransactionScreen.style';
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
 type Props = {
     navigation: HomeScreenNavigationProp;
 };
 
-
-const HomeScreen = ({ navigation }: Props) => {
+const TransactionScreen = ({ navigation }: Props) => {
     const {
       searchQuery,
       handleSearch,
@@ -26,7 +25,7 @@ const HomeScreen = ({ navigation }: Props) => {
       error,
       toggleModal,
       isModalVisible
-    } = homeViewModel();
+    } = transactionsViewModel();
     const insets = useSafeAreaInsets();
   
     const renderItem = ({ item }: { item: TransactionItemModel }) => (
@@ -34,13 +33,9 @@ const HomeScreen = ({ navigation }: Props) => {
     );
 
     return(
-      <SafeAreaView style={[styles.safeArea, { flex: 1 }]} edges={['top', 'left', 'right']}>
+    
         <View style={{flex:1}}>
-        <View style={styles.toolbar}>
-            
-                <Text style={styles.titleToolbar}>Transaction</Text>
-               
-            </View>
+      
         <View style={styles.container}>
             <Icon name="search" size={20} color="gray" style={styles.icon} />
             <TextInput
@@ -70,51 +65,7 @@ const HomeScreen = ({ navigation }: Props) => {
              <FilterModal visible={isModalVisible} onClose={() => toggleModal(false)} onSelectFilter={handleSelectFilter} />
    
             </View>
-    </SafeAreaView>)
+    )
   }
 
-  const styles = StyleSheet.create({
-    safeArea:{
-        flex:1,
-        backgroundColor: 'rgba(7, 59, 249, 0.58)', 
-    },
-    container: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        backgroundColor: '#F5F5F5',
-        borderRadius: 8,
-        paddingHorizontal: 10,
-        paddingVertical: 8,
-        marginHorizontal: 20,
-        elevation: 2,
-        margin:12
-      },
-      toolbar: {
-        alignItems: 'center',
-        padding: 10,
-        width: '100%',
-      },
-      titleToolbar: {
-        color: '#fff',
-        fontSize: 16,
-        fontWeight: 'bold',
-        marginHorizontal:12
-      },
-      icon: {
-        marginRight: 8,
-      },
-      input: {
-        flex: 1,
-        fontSize: 16,
-      },
-      closeIcon: {
-        marginHorizontal: 8,
-      },
-      filterIcon: {
-        marginLeft: 8,
-      },
-
-   
-     
-  });
-  export default HomeScreen;
+  export default TransactionScreen;

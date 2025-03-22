@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { getDataTransaction } from "../../../repository/home/HomeRepository";
 import { TransactionItemModel } from "../../../model/TransactionItemModel";
 
-export const homeViewModel = () => {
+export const transactionsViewModel = () => {
   const [transactions, setTransactions] = useState<TransactionItemModel[]>([]);
   const [filteredTransactions, setFilteredTransactions] = useState<TransactionItemModel[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>("");

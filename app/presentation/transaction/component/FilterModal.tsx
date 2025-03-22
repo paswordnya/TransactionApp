@@ -1,6 +1,6 @@
 
-import React, { useEffect,useState } from 'react';
-import { View, Text, Modal,Image, StyleSheet,TouchableOpacity ,TextInput,FlatList} from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, Modal,TouchableOpacity } from 'react-native';
 import {styles} from './FilterModal.style';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { filterOptions } from '../../../model/FilterMoedel';
