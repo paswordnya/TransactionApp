@@ -26,7 +26,7 @@ const TransactionItemList: React.FC<TransactionItemModelItemProp> = ({
         <Text style={styles.bankText}>
           {item.sender_bank} ➝ {item.beneficiary_bank}
         </Text>
-        <Text style={styles.recipient}>{item.beneficiary_name}</Text>
+        <Text style={[styles.recipient, { textTransform: "uppercase" }]}>{item.beneficiary_name}</Text>
         <Text style={styles.amount}>
           {formatCurrency(item.amount)} <Text style={[item.status === "PENDING" ? styles.dotPending : styles.dot]}>•</Text> {formatDate(item.created_at)}
         </Text>

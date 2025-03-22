@@ -6,7 +6,7 @@ import { RootStackParamList } from "../../../App"
 import { useRoute, RouteProp } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {formatDate, formatCurrency }from '../../utils/utils'
-import { styles } from './transactionDetail.style';
+import { styles } from './TransactionDetail.style';
 
 type TransactionDetailNavigationProp = StackNavigationProp<RootStackParamList, 'TransactionDetail'>;
 type TransactionDetailRouteProp = RouteProp<RootStackParamList, 'TransactionDetail'>;
@@ -51,7 +51,7 @@ const TransactionDetailScreen = ({navigation}: Props) =>{
 
       <View style={styles.row}>
         <View style={styles.column}>
-        <Text style={styles.label}>- {transactionItemModel.beneficiary_name}</Text>
+        <Text style={[styles.label, { textTransform: "uppercase" }]}>- {transactionItemModel.beneficiary_name}</Text>
         <Text style={styles.value}>{transactionItemModel.id}</Text>
         </View>
         <View style={styles.column}>
