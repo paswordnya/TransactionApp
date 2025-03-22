@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { TransactionItemModel } from '../../model/TransactionItemModel';
+import { TransactionItemModel } from '@model/TransactionItemModel';
 
 
 export const getDataTransaction = async (): Promise<TransactionItemModel[]> => {

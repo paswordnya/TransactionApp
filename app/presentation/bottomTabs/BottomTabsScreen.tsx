@@ -1,8 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Feather';
-import TransactionScreen from '../transaction/TransactionScreen';
-import ProfileScreen from '../profileScreen/ProfileScreen';
+import TransactionScreen from '@presentation/transaction/TransactionScreen';
+import ProfileScreen from '@presentation/profileScreen/ProfileScreen';
 
 type RootTabParamList = {
   Transactions: undefined;

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { View, Text, Image } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from "../../../App"
-import {styles} from './SplashScreen.style';
+import { RootStackParamList } from  "@root/App";
+import {styles} from '@presentation/splash/SplashScreen.style';
 type SplashScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Splash'>;
 
 type Props = {

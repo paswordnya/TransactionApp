@@ -1,14 +1,14 @@
 import React from 'react';
-import { View, Text, StyleSheet,TouchableOpacity ,TextInput,FlatList} from 'react-native';
+import { View,TouchableOpacity ,TextInput,FlatList} from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../../../App';
+import { RootStackParamList } from "@root/App";
 import Icon from 'react-native-vector-icons/Ionicons';
-import TransactionItemList from '../transactionList/TransactionItemList';
-import { TransactionItemModel } from '../../model/TransactionItemModel';
-import { transactionsViewModel } from './viewModel/TransactionViewModel';
+import TransactionItemList from '@presentation/transactionList/TransactionItemList';
+import { TransactionItemModel } from '@model/TransactionItemModel';
+import { transactionsViewModel } from '@presentation/transaction/viewModel/TransactionViewModel';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import FilterModal from './component/FilterModal';
-import { styles } from './TransactionScreen.style';
+import FilterModal from '@presentation/transaction/component/FilterModal';
+import { styles } from '@presentation/transaction/TransactionScreen.style';
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
 type Props = {

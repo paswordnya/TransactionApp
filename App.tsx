@@ -8,10 +8,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import SplashScreen from './app/presentation/splash/SplashScreen';
-import BottomTabs from './app/presentation/bottomTabs/BottomTabsScreen';
-import TransactionDetailScreen from './app/presentation/transactionDetail/TransactionDetail';
-import { TransactionItemModel } from './app/model/TransactionItemModel';
+import SplashScreen from '@presentation/splash/SplashScreen';
+import BottomTabs from '@presentation/bottomTabs/BottomTabsScreen';
+import TransactionDetailScreen from '@presentation/transactionDetail/TransactionDetail';
+import { TransactionItemModel } from '@model/TransactionItemModel';
 
 
 export type RootStackParamList = {
@@ -34,7 +34,7 @@ function App(): React.JSX.Element {
       />
       <Stack.Screen 
         name="Home" 
-        component={BottomTabs} // Gunakan BottomTabs
+        component={BottomTabs}
         options={{ headerShown: false }} 
       />
       <Stack.Screen 

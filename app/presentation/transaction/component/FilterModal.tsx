@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { View, Text, Modal,TouchableOpacity } from 'react-native';
-import {styles} from './FilterModal.style';
+import {styles} from '@presentation/transaction/component/FilterModal.style';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { filterOptions } from '../../../model/FilterMoedel';
+import { filterOptions } from '@model/FilterMoedel';
 
 type FilterModalProps = {
     visible: boolean;

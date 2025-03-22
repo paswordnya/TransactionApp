@@ -2,11 +2,11 @@ import React from 'react';
 import Clipboard from '@react-native-clipboard/clipboard';
 import { View, Text,TouchableOpacity,Alert } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from "../../../App"
+import { RootStackParamList } from "@root/App";
 import { useRoute, RouteProp } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {formatDate, formatCurrency }from '../../utils/utils'
-import { styles } from './TransactionDetail.style';
+import {formatDate, formatCurrency }from '@utils/utils'
+import { styles } from '@presentation/transactionDetail/TransactionDetail.style';
 
 type TransactionDetailNavigationProp = StackNavigationProp<RootStackParamList, 'TransactionDetail'>;
 type TransactionDetailRouteProp = RouteProp<RootStackParamList, 'TransactionDetail'>;

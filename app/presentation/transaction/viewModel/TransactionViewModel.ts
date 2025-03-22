@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { TransactionItemModel } from "../../../model/TransactionItemModel";
-import { getDataTransaction } from "../../../repository/transaction/TransactionRepository";
+import { TransactionItemModel } from "@model/TransactionItemModel";
+import { getDataTransaction } from "@app/repository/transaction/TransactionRepository";
 
 export const transactionsViewModel = () => {
   const [transactions, setTransactions] = useState<TransactionItemModel[]>([]);

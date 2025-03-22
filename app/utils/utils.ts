@@ -14,6 +14,6 @@ export const formatDate = (dateString: string) => {
     return new Intl.NumberFormat('id-ID', {
       style: 'currency',
       currency: 'IDR',
-      minimumFractionDigits: 0, // Menghilangkan desimal
+      minimumFractionDigits: 0,
     }).format(amount);
   };

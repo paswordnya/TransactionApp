@@ -62,8 +62,7 @@ export const styles = StyleSheet.create({
       textAlign: 'center',
       fontSize: 30,
       fontWeight: 'bold',
-      // Warna oranye transparan
-      transform: [{ rotate: '-30deg' }], // Memiringkan teks
+      transform: [{ rotate: '-30deg' }], 
     },
     watermarkColorPending:{
       color: 'rgba(255, 165, 0, 0.3)',

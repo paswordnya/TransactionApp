@@ -2,10 +2,10 @@ import React from 'react';
 import { View, Text,TouchableOpacity} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import {RootStackParamList} from '../../../App'
-import { TransactionItemModel } from '../../model/TransactionItemModel';
-import {formatDate, formatCurrency }from '../../utils/utils'
-import { styles } from './TransactionItemList.style';
+import { RootStackParamList } from "@root/App";
+import { TransactionItemModel } from '@model/TransactionItemModel';
+import {formatDate, formatCurrency }from '@utils/utils'
+import { styles } from '@presentation/transactionList/TransactionItemList.style';
 
 type TransactionItemModelItemProp = {
     item: TransactionItemModel;

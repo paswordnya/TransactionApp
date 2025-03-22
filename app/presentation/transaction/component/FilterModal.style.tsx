@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     modalContainer: {
         flex: 1,
         justifyContent: 'flex-end',
-        backgroundColor: 'rgba(0,0,0,0.5)', // Transparan di luar modal
+        backgroundColor: 'rgba(0,0,0,0.5)', 
       },
       modalContent: {
         backgroundColor: 'white',

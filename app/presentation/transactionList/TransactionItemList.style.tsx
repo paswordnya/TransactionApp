@@ -9,10 +9,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     padding: 12,
     borderRadius: 9,
-    borderLeftWidth: 9,  // Kiri lebih tebal
-    borderTopWidth: 0,   // Atas
-    borderRightWidth: 0, // Kanan
-    borderBottomWidth: 0,// Bawah
+    borderLeftWidth: 9,  
+    borderTopWidth: 0,   
+    borderRightWidth: 0,
+    borderBottomWidth: 0,
     
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 1 },
